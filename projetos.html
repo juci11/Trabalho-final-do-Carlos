@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Streaming Platform</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .search-bar {
+      display: flex;
+      align-items: center;
+    }
+
+    .search-bar input {
+      padding: 8px 12px;
+      border: none;
+      border-radius: 4px;
+      margin-right: 10px;
+    }
+
+    .search-bar button {
+      background-color: #7b00ff;
+      color: #fff;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .user-profile {
+      display: flex;
+      align-items: center;
+    }
+
+    .user-profile img {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .featured-content {
+      margin-top: 20px;
+    }
+
+    .featured-item {
+      display: flex;
+      align-items: center;
+      background-color: #C9C9C9;
+      padding: 20px;
+      box-shadow: #C9C9C9;
+      border-radius: 10px;
+    }
+
+    .featured-item img {
+      width: 250px;
+      height: 375px;
+      object-fit: cover;
+      margin-right: 20px;
+      border-radius: 5px;
+    }
+
+    .featured-info h2 {
+      margin-top: 0;
+    }
+
+    .actions {
+      display: flex;
+      margin-top: 20px;
+    }
+
+    .actions button {
+      background-color: #7b00ff;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+
+    .recommended-content {
+      margin-top: 40px;
+    }
+
+    .content-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-gap: 20px;
+    }
+
+    .content-item {
+      background-color: #C9C9C9;
+      padding: 10px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+
+    .content-item img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .content-item h3 {
+      margin-top: 10px;
+    }
+
+    .content-item p {
+      margin-bottom: 10px;
+    }
+
+    .content-item button {
+      background-color: #7b00ff;
+      color: #fff;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+        </ul>
+      </nav>
+      <div class="user-profile">
+        <img src="solar.jpg" alt="User Avatar">
+        <span>My Account</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="featured-content">
+        <div class="featured-item">
+          <img src="2.jpg" alt="Spider-Man: Across the Spider-Verse">
+          <div class="featured-info">
+            <h2>Galeria de trabalhos</h2>
+            <p>Abaixo é possível ver todos os trabalhos que eu desenvolvi ao longo do ano</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="recommended-content">
+        <h2>Trabalhos</h2>
+        <div class="content-grid">
+          <div class="content-item">
+            <img src="Gale.jpg" alt="Galeria">
+            <h3>Galeria</h3>
+            <button>Acessar</button>
+          </div>
+          <div class="content-item">
+            <img src="solar.jpg" alt="Sistema solar">
+            <h3>Sistema solar</h3>
+            <button>Acessar</button>
+          </div>
+          <div class="content-item">
+            <img src="3.jpg" alt="Oppenheimer">
+            <h3>Oppenheimer</h3>
+            <button>Acessar</button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
